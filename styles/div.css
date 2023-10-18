@@ -47,5 +47,10 @@
 
 .zugang_zum_erfolg {
     position: relative;
-    left: 300px;
+    left: 15vw;
+}
+
+
+.mid_screen {
+    left: 20vw;
 }
