@@ -1,37 +1,56 @@
-
+/* Grundstile für die Bilder */
 .image1 {
     position: relative;
-    width: 230px;
+    width: 100%; /* Breite auf 100% setzen, um responsiv zu sein */
+    max-width: 230px; /* Maximale Breite festlegen, um Überdehnung zu verhindern */
     transform: rotate(-15deg);
-    left: 40px;
+    left: 5%; /* Linken Abstand in Prozent setzen */
     z-index: -1;
 }
+
 .image2 {
-    width: 300px;
+    width: 100%; /* Breite auf 100% setzen */
+    max-width: 300px; /* Maximale Breite festlegen */
 }
+
 .image3 {
-    width: 110px;
+    width: 100%; /* Breite auf 100% setzen */
+    max-width: 110px; /* Maximale Breite festlegen */
     position: relative;
-    top: 100px;
-    left: -50px;
+    top: 10%; /* Top-Abstand in Prozent setzen */
+    left: -5%; /* Linken Abstand in Prozent setzen */
 }
 
+/* Gemeinsame Stile für die versteckten und gezeigten Zustände */
+.hidden, .show {
+    transition: all 1s;
+}
+
+/* Stile für den versteckten Zustand */
 .hidden {
-    transition: 1s;
-    filter: blur(10px);
     position: relative;
-    top:900px;
+    top: 900px;
+    filter: blur(10px);
     opacity: 0;
-    left: -400px;
 }
 
+/* Stile für den gezeigten Zustand */
 .show {
     filter: blur(0px);
     opacity: 1;
-    transition: all 1s;
-    transform: translateX(600px);
+    transform: translateX(100px); /* Ursprüngliche Position zurücksetzen */
 }
 
+/* Media Query für kleinere Bildschirme (z.B. Smartphones) */
+@media only screen and (max-width: 600px) {
+    .image1, .image2, .image3 {
+        width: 100%; /* Alle Bilder auf 100% Breite setzen */
+        max-width: none; /* Maximale Breite aufheben */
+        left: 0; /* Linken Abstand aufheben */
+        top: 0; /* Top-Abstand aufheben */
+    }
 
-
-
+    .hidden, .show {
+        transform: none; /* Transformierung aufheben */
+    }
+}
