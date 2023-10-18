@@ -42,15 +42,3 @@
 }
 
 /* Media Query für kleinere Bildschirme (z.B. Smartphones) */
-@media only screen and (max-width: 600px) {
-    .image1, .image2, .image3 {
-        width: 100%; /* Alle Bilder auf 100% Breite setzen */
-        max-width: none; /* Maximale Breite aufheben */
-        left: 0; /* Linken Abstand aufheben */
-        top: 0; /* Top-Abstand aufheben */
-    }
-
-    .hidden, .show {
-        transform: none; /* Transformierung aufheben */
-    }
-}
