@@ -1,0 +1,42 @@
+
+
+.logos {
+	position: relative;
+	top: 100px;
+	display: flex;
+	gap: 100px;
+	left: -30px;
+}
+.logo {
+	filter: blur(4px);
+	position: relative;
+	width: 100px;
+	top: 600px;
+	left: 700px;
+	opacity: 0;
+}
+
+.logo:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.logo_show {
+	filter: blur(0px);
+	opacity: 1;
+	transform: translateX(50px);
+}
+
+.logo1 {
+	transition: 200ms;
+}
+.logo2 {
+	transition: 600ms;
+}
+
+
+.logo3 {
+	transition: 800ms;
+}
+
+

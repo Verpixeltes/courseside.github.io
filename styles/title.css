@@ -1,0 +1,29 @@
+.erfolg_title {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    top: 700px;
+}
+
+
+.erfolg_text {
+
+    margin-top: 10px;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    top: 262px;
+    left: 740px;
+    width: 100%;
+    opacity: 0;
+}
+.erfolg_text_show {
+        filter: blur(0px);
+        opacity: 1;
+        transform: translateX(90px);
+        transition: all 1s;    
+    }
+
