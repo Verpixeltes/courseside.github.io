@@ -4,22 +4,25 @@
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
-    top: 700px;
+    top: 920px;
+    word-wrap: break-word;
 }
 
 
 .erfolg_text {
-
     margin-top: 10px;
     position: relative;
     font-family: "Open Sans", sans-serif;
-    font-size: 19px;
+    font-size: 1vw;
     font-weight: 400;
     top: 262px;
     left: 740px;
-    width: 100%;
     opacity: 0;
+    word-wrap: break-word;
 }
+
+    
+    
 .erfolg_text_show {
         filter: blur(0px);
         opacity: 1;
