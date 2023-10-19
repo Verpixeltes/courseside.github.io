@@ -54,3 +54,10 @@
 .mid_screen {
     left: 20vw;
 }
+
+
+@media (min-width: 1376px) {
+    .hidden-ss {
+      display: none !important;
+    }
+  }
