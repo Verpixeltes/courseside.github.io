@@ -39,4 +39,27 @@
 	transition: 800ms;
 }
 
+@media (max-width: 1366px) {
+    .logos {
+		margin: 0 auto;
+        margin-left: -270px; /* Passe den Wert nach Bedarf an */
+    }
+	.zugang_zum_erfolg {
+		margin-left: -100px;
+	}
+	#start_now {
+		left: 950px;
+	}
+	.erfolg_text {
+		font-size: 1.2vw;
+	}
 
+	.cycle1, .cycle2, .cycle3 {
+		margin-left: -20px;
+	}
+	.erfolg_text {
+		left: 720px;
+	}
+	
+	
+}
