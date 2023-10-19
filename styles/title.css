@@ -4,21 +4,32 @@
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
-    top: 920px;
+    top: 900px;
     word-wrap: break-word;
+
 }
 
 
 .erfolg_text {
-    margin-top: 10px;
     position: relative;
     font-family: "Open Sans", sans-serif;
     font-size: 0.8vw;
     font-weight: 400;
-    top: 262px;
     left: 740px;
     opacity: 0;
     word-wrap: break-word;
+}
+.etext :nth-child(1) {
+    position: relative; 
+    top: 280px;
+}
+.etext :nth-child(2) {
+    position: relative; 
+    top: 380px;
+}
+.etext :nth-child(3) {
+    position: relative; 
+    top: 450px;
 }
 
     
@@ -28,5 +39,20 @@
         opacity: 1;
         transform: translateX(90px);
         transition: all 1s;    
+}
+
+
+@media (max-width: 1376px) {
+    .erfolg_title {
+      top: 800px;
     }
+  }
+
+  .Community_title {
+    text-align: center; 
+    top: 600px; 
+    position: relative;
+    font-size: 50px;
+
+  }
 
