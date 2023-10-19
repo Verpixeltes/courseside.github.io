@@ -39,7 +39,7 @@
 	transition: 800ms;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1600px) {
     .logos {
 		margin: 0 auto;
         margin-left: -280px; /* Passe den Wert nach Bedarf an */
