@@ -32,6 +32,7 @@
     top: 900px;
     filter: blur(10px);
     opacity: 0;
+    left: 3vw;
 }
 
 /* Stile für den gezeigten Zustand */
@@ -41,4 +42,21 @@
     transform: translateX(100px); /* Ursprüngliche Position zurücksetzen */
 }
 
-/* Media Query für kleinere Bildschirme (z.B. Smartphones) */
+
+@media (max-width: 1366px) {
+    .image {
+        left: -3000px;
+        top: 70px;
+        width: 14%;
+    }
+    
+    .image1 {
+        left: 30px;
+        top: 70px;
+        width: 15%;
+    }
+    
+    .image3 {
+        left: -30px;
+    }
+}
