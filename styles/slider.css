@@ -60,6 +60,14 @@
 	.erfolg_text {
 		left: 720px;
 	}
-	
+	#e_text2 {
+		top: 345px;
+	}
+	#e_text3 {
+		border: solid 2px;
+	}
+	#text3 {
+		top: 380px;
+	}
 	
 }
