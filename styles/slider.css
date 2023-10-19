@@ -42,7 +42,8 @@
 @media (max-width: 1366px) {
     .logos {
 		margin: 0 auto;
-        margin-left: -400px; /* Passe den Wert nach Bedarf an */
+        margin-left: -280px; /* Passe den Wert nach Bedarf an */
+		
     }
 	.zugang_zum_erfolg {
 		margin-left: -100px;
