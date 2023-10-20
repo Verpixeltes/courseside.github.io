@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    overflow: hidden;
+  }
+  /* CSS für die Animation */
+  @keyframes count-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  #zahl {
+    font-size: 24px;
+    animation: count-up 3s ease-out forwards;
+    font-family: 'Open Sans', sans-serif;
+  }
+</style>
+</head>
+<body> <div class="container" style="left: 1200px;">
+  <span style="position: relative; left: 200px; font-size: 40px;" id="zahl">0</span>
+  <img style="width: 50px; position: relative; left: 25px; top: 5px;" src="/images/heart.png" alt="">
+</div>
+
+  <script>
+    // JavaScript, um die Zahl zu animieren
+    function animateNumber() {
+      const element = document.getElementById("zahl");
+      const targetNumber = 100000;
+      const duration = 5000000; // 3 Sekunden
+      const step = (targetNumber / duration) * 10;
+
+      function updateNumber(current) {
+        element.textContent = Math.floor(current);
+      }
+
+      function stepAnimation(current, startTime) {
+        const currentTime = Date.now();
+        if (current < targetNumber) {
+          updateNumber(current);
+          requestAnimationFrame((time) => stepAnimation(current + step, time));
+        } else {
+          updateNumber(targetNumber);
+        }
+      }
+
+      requestAnimationFrame((time) => stepAnimation(0, time));
+    }
+
+    animateNumber();
+  </script>
+</body>
+</html>

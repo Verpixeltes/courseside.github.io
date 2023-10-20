@@ -1,0 +1,144 @@
+/* Global Variables */
+:root {
+    --color1: #eee;
+    --color2: #fff;
+    --color3: #688F4E;
+    --color3Hover: #B1D182;
+    --color4: #B1D182;
+    --color4Hover: #E7FBCB;
+    --color5: #b12bff;
+    --color5Hover: #8300d0;
+    --color6: #2c3233;
+    --color7: #a2b1ba;
+}
+
+/* Reset Default Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--color1);
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background-color: #F8F5F3;
+
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__card {
+    background-color: var(--color2);
+    width: 320px;
+    height: 520px;
+    text-align: center;
+    transition: transform 0.3s;
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__card:not(.container__card:last-of-type) {
+    margin-right: 35px;
+}
+
+.container__card:hover {
+    transform: translateY(-15px);
+}
+
+.container__cardSvgs {
+    width: 100%;
+    height: 240px;
+    position: relative;
+
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__cardSvg1 {
+    /* Position */
+    position: absolute;
+    left: 41px;
+    bottom: 38px;
+}
+
+.container__cardSvg2 {
+    /* Position */
+    position: absolute;
+    right: 36px;
+    top: 40px;
+}
+
+.container__cardSvg3 {
+    position: absolute;
+}
+
+.container__cardContent {
+    padding: 35px;
+}
+
+.container__cardName {
+    color: var(--color6);
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.container__cardPrice {
+    color: var(--color4);
+    margin: 20px 0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.container__cardDesc {
+    color: var(--color7);
+    padding: 0 30px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+.container__cardLink {
+    color: var(--color2);
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+
+    /* Text */
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.container__cardLink:hover {
+    background-color: var(--color3Hover) !important;
+}
+
+.container__card:nth-of-type(2) .container__cardLink:hover {
+    background-color: var(--color4Hover) !important;
+}
+
+.container__card:nth-of-type(3) .container__cardLink:hover {
+    background-color: var(--color5Hover) !important;
+}
+
+
+span {
+    text-decoration: line-through;
+}

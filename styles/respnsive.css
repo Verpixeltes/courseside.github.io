@@ -1,0 +1,58 @@
+@media (max-width: 1680px) {
+   
+    .image {
+        left: -3000px;
+        top: 70px;
+        width: 14%;
+    }
+    
+    .image1 {
+        left: 30px;
+        top: 70px;
+        width: 15%;
+    }
+    
+    .image3 {
+        left: -30px;
+    }
+    .logos {
+		margin: 0 auto;
+        margin-left: -330px; /* Passe den Wert nach Bedarf an */
+		
+    }
+	.zugang_zum_erfolg {
+		margin-left: -100px;
+	}
+	#start_now {
+		left: 950px;
+	}
+	.erfolg_text {
+		font-size: 1.2vw;
+	}
+
+	.cycle1, .cycle2, .cycle3 {
+		margin-left: -20px;
+	}
+	.erfolg_text {
+		left: 720px;
+	}
+	#e_text2 {
+		top: 360px;
+	}
+	
+	#text3 {
+		top: 420px;
+	}
+    .erfolg_title {
+        top: 800px;
+      }
+
+
+  }
+
+
+  @media (min-width: 1600px) {
+    .hidden-ss {
+        display: none !important;
+      }
+  }

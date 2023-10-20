@@ -1,0 +1,88 @@
+.erfolg_title {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: 800px;
+    text-align: center;
+    top: 800px;
+    color: #2B463C;
+    word-wrap: break-word;
+
+}
+
+
+.erfolg_text {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9vw;
+    font-weight: 800px;
+    left: 740px;
+    opacity: 0;
+    word-wrap: break-word;
+}
+.etext :nth-child(1) {
+    position: relative; 
+    top: 280px;
+}
+.etext :nth-child(2) {
+    position: relative; 
+    top: 380px;
+}
+.etext :nth-child(3) {
+    position: relative; 
+    top: 450px;
+}
+
+    
+    
+.erfolg_text_show {
+        filter: blur(0px);
+        opacity: 1;
+        transform: translateX(90px);
+        transition: all 1s;    
+}
+
+
+
+
+  .Community_title {
+    font-weight: 800px;
+    text-align: center; 
+    top: 600px; 
+    position: relative;
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    color: #2B463C;
+
+  }
+
+.comm_text {
+    
+    position: relative;
+    top: 600px;
+    left: 31%;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.area_text{
+    position: relative;
+    top: 10px;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.area_subtext {
+    position: relative;
+    left: 10%;
+    font-size: 16px;
+    top: 10px;
+    word-wrap: break-word;
+    color: white;
+    text-align: center; /* Text horizontal zentrieren */
+    max-width: 80%; /* Maximale Breite des Texts, um Platz für "Wände" zu lassen */
+    padding: 20px; /* Abstand um den Text herum, um die "Wände" zu erstellen */
+}

@@ -1,0 +1,94 @@
+.slider_container {
+    position: relative;
+    background-color: #E7F1D9;
+    top : 280px;
+    height: 700px;
+
+}
+.slider_ {
+    position: relative;
+    top: 40px;
+    left: -65px;
+    width: 2100px;
+}
+.line {
+    position: relative;
+    border: solid 1px #B1D182;
+    width: 1px;
+    height: 900px;
+    left: 300px;
+    top: 250px;
+    z-index: -1;
+}
+.price_table {
+    position: relative;
+    left: 550px;
+    top: 400px;
+}
+
+.like_counter {
+    user-select: none;
+    position: relative;
+    top: 300px;
+    left: 680px;
+}
+
+.like_counter_show {
+    transform: translateX(10px);
+    transition: 10s;
+}
+.area {
+    cursor: pointer;
+    transition: 1s;
+    background-color: #B1D182;
+    width: 360px;
+    height: 230px;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    opacity: 0;
+    filter: blur(4px);
+    
+}
+.area_show:hover {
+    transition: 1s;
+}
+.area_show {
+    opacity: 1;
+    transform: translateX(200px);
+    filter: blur(0px);
+}
+
+.area1 {
+    transition: 600ms;
+}
+.area2 {
+    transition: 800ms;
+}
+
+
+.area3 {
+    transition: 1000ms;
+}
+
+
+
+.zugang_zum_erfolg {
+    display: flex;
+    position: relative;
+    left: -30px;
+    top: 430px;
+    gap: 100px;
+}
+
+
+.mid_screen {
+    left: 20vw;
+}
+
+
+
+
+.object {
+    position: relative;
+    
+}

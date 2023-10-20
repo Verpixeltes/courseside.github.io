@@ -1,0 +1,29 @@
+body {
+	overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F5F3;
+}
+
+.zahl {
+	transition: 400ms;
+	top: -20px;
+	position: relative;
+    font-size: 20px;
+    color: #333;
+    margin-top: 100px;
+	font-weight: 800;
+}
+
+
+p {
+	left: 5px;
+	position: relative;
+	top: 140px;
+	font-size:30px;
+	color: #333;
+	margin-top: 100px;
+}
+

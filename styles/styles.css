@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F8F5F3;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px; /* Reduzierte Padding für kleinere Bildschirme */
+  display: flex;
+  justify-content: space-between;
+  font-family: "Kobe", Helvetica, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 100px;
+  color: #6d6458;
+}
+
+.site-menu {
+  display: flex;
+  flex-wrap: wrap; /* Elemente können auf kleinere Bildschirme umgebrochen werden */
+}
+
+.menu-item {
+  margin-left: 20px; /* Reduzierter Abstand für kleinere Bildschirme */
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Breite in Prozent für Responsivität */
+  height: 80%;
+  max-width: 400px; /* Maximale Breite für größere Bildschirme begrenzen */
+  height: 300px;
+}
+
+.block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.b-1, .b-2, .b-3, .b-4, .b-5, .b-6, .b-7 {
+  background-size: cover;
+}
+
+.b-1 {
+  background: url("/images/test1.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-2 {
+  background: url("/images/intro2.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-3 {
+  background: url("/images/intro3.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-4 {
+  background: url("/images/intro4.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-5 {
+  background: url("/images/intro5.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-6 {
+  background: url("/images/intro6.png") 50% 50% no-repeat;
+}
+
+.b-7 {
+  background: url("/images/intro7.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  bottom: -10rem;
+  background: #F8F5F3;
+}
+
+.title {
+  margin-top: 10rem; /* Reduzierter oberer Abstand für kleinere Bildschirme */
+  text-align: center;
+  font-family: "Canopee";
+  font-size: 8vw;
+  color: #393833;
+  overflow: hidden;
+}
+
+.title .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
